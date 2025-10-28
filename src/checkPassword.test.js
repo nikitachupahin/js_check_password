@@ -19,7 +19,7 @@ describe(`Function 'checkPassword':`, () => {
 
   it(`should return 'true' for the valid password
     with at least 8 characters`, () => {
-    expect(checkPassword('Password1!')).toBe(true);
+    expect(checkPassword('Test1!ok')).toBe(true);
   });
 
   it(`should return 'true' for the valid password

@@ -56,4 +56,9 @@ describe(`Function 'checkPassword':`, () => {
     without letters of the Latin alphabet `, () => {
     expect(checkPassword('Пароль1!')).toBe(false);
   });
+
+  it(`should return 'false' for the invalid password
+    with incorrect multiple criteria`, () => {
+    expect(checkPassword('qwerty')).toBe(false);
+  });
 });
